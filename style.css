@@ -51,7 +51,8 @@ li  button{
 }
 
 button:hover{
-  transform: scale(1.1)
+  transform: scale(1.1);
+  cursor:pointer;
 }
 
 body{
@@ -59,3 +60,6 @@ body{
   background-color: #414245;
   color: white;
 }
+ hr{
+   width: 60%;
+ }
