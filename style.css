@@ -25,6 +25,7 @@ div{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 50%;
 }
 
 li {
@@ -49,7 +50,7 @@ li  button{
   padding: 5px;
 }
 
-li  button:hover{
+button:hover{
   transform: scale(1.1)
 }
 

@@ -39,19 +39,18 @@ function addListAfterKeypress(event) {
 function toggleFunction(e){
 	e = e || window.event;
 	var target = e.target || e.srcElement;
-	console.log(target.className);
 	if (target.tagName !== "BUTTON") {  // This is to make sure to add styles to only li text (not to add styles to delete button)
 		target.classList.toggle("done");
 	}
 	if (target.tagName === "BUTTON"){
-		target.parentNode.removeChild(target.parentNode);  // target.parentNode = <li></li>
+		console.log(target.parentNode.parentNode);
+		target.parentNode.parentNode.removeChild(target.parentNode);  // target.parentNode = <li></li>
 	}
 }
 
 function deleteItems(event){
 	event = event || window.event;
 	var target = event.target || event.srcElement;
-	console.log(target.tagName);
 }
 
 
